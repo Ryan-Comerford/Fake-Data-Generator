@@ -3,8 +3,8 @@ Name: data_generator_Ryan-Comerford
 Version: 0.0.1
 Summary: A simple package to generate fake data
 Author-email: Ryan William Comerford <comerford.ryan31@gmail.com>
-Project-URL: Homepage, https://github.com/pypa/sampleproject
-Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Project-URL: Homepage, https://github.com/Ryan-Comerford/Data-Generator
+Project-URL: Issues, https://github.com/Ryan-Comerford/Data-Generator/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
