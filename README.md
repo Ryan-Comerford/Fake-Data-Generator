@@ -1,0 +1,1 @@
+This is a python library to generate fake data for testing purposes in sqlite3
