@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fake_data_generator/__init__.py
+src/fake_data_generator.egg-info/PKG-INFO
+src/fake_data_generator.egg-info/SOURCES.txt
+src/fake_data_generator.egg-info/dependency_links.txt
+src/fake_data_generator.egg-info/top_level.txt
+src/fake_data_generator/functions/__init__.py
+src/fake_data_generator/functions/generate_functions.py
+src/fake_data_generator/utils/__init__.py
+src/fake_data_generator/utils/string_utils.py
