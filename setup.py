@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="fake_data_generator",
+    name="MythosMaker",
     version="0.0.1",
     author="Ryan William Comerford",
     author_email="comerford.ryan31@gmail.com",

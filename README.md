@@ -4,7 +4,7 @@ This is a python library to generate fake data for testing purposes
 
 # Main Function + Args
 
-The main function to import and use is "from fake_data_generator import run_generator"
+To use import the following "from MythosMaker import run_generator"
 
 The arguments are (with =default_value)
     1) sql_models_path (i.e. the path to your sqlalchemy models to be used)
@@ -15,6 +15,8 @@ The arguments are (with =default_value)
 # Some Notes...
 
 Default Strings will be filled in with a fake word from Faker library
+
+This framework will only pickup tables defined by classes in the SQLAlchemy models files
 
 It is best to overestimate the size of your columns
 
