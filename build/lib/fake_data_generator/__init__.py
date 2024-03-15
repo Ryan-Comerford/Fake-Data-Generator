@@ -1,1 +1,1 @@
-from .functions.generate_functions import run_generator
+from .generation.run_fake_generator import run_generator
