@@ -2,9 +2,18 @@ import random
 import numpy as np
 import string
 
-def create_default(fake, record):
+def create_default_string(fake, record):
     fake_value = fake.word()
     return fake_value
+
+def create_default_int(fake, record):
+    return random.randint(1, 1000000)
+
+def create_default_float(fake, record):
+    return random.random()
+
+def create_default_date(fake, record):
+    return fake.date()
 
 def create_email(fake, record):
     domain_names = ['yahoo', 'aol', 'gmail', 'outlook', 'iCloud', 'Mail', 'GMX', 'ProtonMail', 'example', 'test', 'company']
@@ -93,4 +102,19 @@ def create_state(fake, record):
 
 def create_url(fake, record):
     return fake.url()
+
+def create_company(fake, record):
+    return fake.company()
+
+def create_text(fake, record):
+    return fake.text()[:50:]
+
+def create_sentence(fake, record):
+    return fake.sentence()
+
+def create_latitude(fake, record):
+    return float(fake.latitude())
+
+def create_longitude(fake, record):
+    return float(fake.longitude())
 

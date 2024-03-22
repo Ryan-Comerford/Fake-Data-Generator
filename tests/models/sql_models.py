@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, DateTime, ForeignKey, Boolean
+from sqlalchemy import create_engine, Column, Integer, String, DateTime, ForeignKey, Float, Date
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from datetime import datetime
@@ -8,6 +8,8 @@ Base = declarative_base()
 class UserProfile(Base):
     __tablename__ = 'UserProfile'
     id = Column(Integer, primary_key=True)
+    longitude = Column(Float)
+    rand_float = Column(Float, nullable=False)
     user_id = Column(Integer, ForeignKey('User.id'))
     bio = Column(String(500))
     profile_picture_url = Column(String(255))
@@ -20,7 +22,7 @@ class User(Base):
     email = Column(String(50), unique=True, nullable=False)
     first_name = Column(String(50), nullable=False)
     last_name = Column(String(50), nullable=False)
-    birth_date = Column(DateTime, nullable=True)
+    birth_date = Column(Date, nullable=True)
     profile = relationship("UserProfile", uselist=False, back_populates="user")
     posts = relationship('Post', backref='author')
     comments = relationship('Comment', backref='author')
@@ -29,6 +31,7 @@ class Category(Base):
     __tablename__ = 'Category'
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(50), nullable=False)
+    company = Column(String(50), nullable=False)
     posts = relationship("Post", backref="category")
 
 class Post(Base):
