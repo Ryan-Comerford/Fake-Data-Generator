@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: MythosMaker
 Version: 0.0.4
-Summary: A simple package to generate fake data
+Summary: A simple package to persist fake data objects into a relational database
 Home-page: https://github.com/Ryan-Comerford/Fake-Data-Generator
 Author: Ryan Comerford
 Author-email: Ryan Comerford <comerford.ryan31@gmail.com>
@@ -30,7 +30,7 @@ sql_models_path -> The path to your sqlalchemy models to be used in format of "d
 
 database_uri='sqlite:///database.db' -> The name of your database to be persisted...
 
-number_of_processes=5 -> The number of processes...Keep in mind the more you add the more overhead on the system
+number_of_processes=5 -> The number of processes...Keep in mind the more you add the more overhead on the system...
 
 number_of_records=1000 -> The number of records to be persisted...
 '''

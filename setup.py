@@ -5,7 +5,7 @@ setup(
     version="0.0.4",
     author="Ryan Comerford",
     author_email="comerford.ryan31@gmail.com",
-    description="A simple package to generate fake data",
+    description="A simple package to persist fake data objects into a relational database",
     long_description="",
     long_description_content_type="text/markdown",
     url="https://github.com/Ryan-Comerford/Fake-Data-Generator",
