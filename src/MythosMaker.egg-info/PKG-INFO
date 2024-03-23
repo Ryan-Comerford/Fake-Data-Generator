@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: MythosMaker
-Version: 0.0.4
+Version: 0.0.5
 Summary: A simple package to persist fake data objects into a relational database
 Home-page: https://github.com/Ryan-Comerford/Fake-Data-Generator
 Author: Ryan Comerford

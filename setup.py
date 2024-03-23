@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="MythosMaker",
-    version="0.0.4",
+    version="0.0.5",
     author="Ryan Comerford",
     author_email="comerford.ryan31@gmail.com",
     description="A simple package to persist fake data objects into a relational database",
