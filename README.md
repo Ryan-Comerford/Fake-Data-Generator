@@ -1,23 +1,23 @@
-# MythosMaker
+# fakemake
 
-This is a python library to generate fake data for testing purposes. This uses the faker, sqlalchemy, multiprocessing and other libraries to generate fake data objects in multiple processes to speed up performance and generate large amounts of data.
+This is a python library to generate fake data objects and persist them into a relational database. This uses faker, sqlalchemy, multiprocessing and other libraries to generate fake data objects in multiple processes to increase the volume of data generated and persisted into the database.
 
-# How to Use
+# Arguments
+
+There are four neccessary arguments needed to run the generator....
+
+    sql_models_path -> The path to your sqlalchemy models in the format of "directory.file"...There is no default as this is dependent on usecase...
+
+    database_uri -> The connection string of your database to be persisted into...The default is 'sqlite:///database.db'...
+
+    number_of_processes -> The number of processes...Keep in mind the more you add the more overhead on the system...The default is 5...
+
+    number_of_records -> The number of records to be persisted...The default is 1000...
+
+# How to Run
 
 ```python
-from MythosMaker import run_generator
-
-'''
-Arguments (with = as default)
-
-sql_models_path -> The path to your sqlalchemy models to be used in format of "directory.file"...
-
-database_uri='sqlite:///database.db' -> The name of your database to be persisted...
-
-number_of_processes=5 -> The number of processes...Keep in mind the more you add the more overhead on the system...
-
-number_of_records=1000 -> The number of records to be persisted...
-'''
+from fakemake import run_generator
 
 run_generator('directory.file', 'sqlite:///database.db', 5, 1000)
 ```
